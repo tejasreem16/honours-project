@@ -52,7 +52,7 @@ module tb_soc_top;
     logic        rst_n;
 
     // Core control
-    logic [31:1] rst_vec  = 31'h0800_0000;
+    logic [31:1] rst_vec  = 31'h1000_0000 >> 1;
     logic        nmi_int  = 1'b0;
     logic [31:1] nmi_vec  = 31'h0;
     logic [31:1] jtag_id  = 31'h0;
